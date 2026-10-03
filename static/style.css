@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+.container {
+    width: 95%;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.top-bar form {
+    display: flex;
+    gap: 8px;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.top-bar input {
+    width: 250px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+
+.add-btn {
+    background: #28a745;
+}
+
+.search-btn {
+    background: #007bff;
+}
+
+.reset-btn {
+    background: #6c757d;
+}
+
+.edit-btn {
+    background: #ffc107;
+    color: black;
+    padding: 7px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+    padding: 7px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #343a40;
+    color: white;
+}
+
+tr:hover {
+    background: #f1f1f1;
+}
+
+.no-data {
+    padding: 30px;
+    color: #777;
+}
+
+.form-container {
+    width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-container .btn {
+    margin-top: 20px;
+    text-align: center;
+}
