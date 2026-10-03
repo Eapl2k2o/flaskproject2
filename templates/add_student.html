@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Student</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="form-container">
+
+    <h1>Add Student</h1>
+
+    <form action="{{ url_for('add_student') }}" method="POST">
+
+        <label>Name</label>
+        <input type="text"
+               name="name"
+               placeholder="Enter student name"
+               required>
+
+        <label>Roll Number</label>
+        <input type="text"
+               name="roll_no"
+               placeholder="Enter roll number"
+               required>
+
+        <label>Department</label>
+        <select name="department" required>
+            <option value="">Select Department</option>
+            <option value="CSE">CSE</option>
+            <option value="IT">IT</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="MECH">MECH</option>
+            <option value="CIVIL">CIVIL</option>
+        </select>
+
+        <label>Email</label>
+        <input type="email"
+               name="email"
+               placeholder="Enter email"
+               required>
+
+        <label>Phone</label>
+        <input type="text"
+               name="phone"
+               placeholder="Enter phone number"
+               required>
+
+        <button type="submit" class="btn add-btn">
+            Add Student
+        </button>
+
+        <a href="{{ url_for('index') }}"
+           class="btn reset-btn">
+            Back
+        </a>
+
+    </form>
+
+</div>
+
+</body>
+</html>
